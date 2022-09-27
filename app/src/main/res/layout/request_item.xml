@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/placeholder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Kristina"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:includeFontPadding="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/circleImageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="10sp"
+                android:includeFontPadding="false"
+                android:textColor="@color/tab_text_color"
+                android:fontFamily="@font/poppins"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:cornerRadius="20dp"
+                android:textColor="@color/black"
+                android:text="Accept"
+                android:fontFamily="@font/poppins"
+                android:textSize="10sp"
+                app:strokeWidth="1dp"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/green"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@+id/bt_decline"
+                app:layout_constraintStart_toStartOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_decline"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                app:cornerRadius="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:textSize="10sp"
+                app:strokeWidth="1dp"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/red"
+                android:textAllCaps="false"
+                android:text="Decline"
+                app:layout_constraintStart_toEndOf="@+id/bt_accept"
+                app:layout_constraintTop_toTopOf="@+id/bt_accept" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

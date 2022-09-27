@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/alertFragment"
+        android:title="Alert"
+        android:enabled="true"
+        android:icon="@mipmap/alertde"/>
+    <item
+        android:id="@+id/chatFragment"
+        android:title="Chat"
+        android:enabled="true"
+        android:icon="@mipmap/chatde"/>
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="" />
+
+    <item
+        android:id="@+id/shopFragment"
+        android:title="Shop"
+        android:enabled="true"
+        android:icon="@mipmap/shopde"/>
+
+    <item
+        android:id="@+id/notificationFragment"
+        android:title="Notification"
+        android:enabled="true"
+        android:icon="@mipmap/notificationde"/>
+
+</menu>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Shops.AddPortfolioFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/upload_logo"
+                style="@style/fields_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                android:drawableEnd="@drawable/camera"
+                android:fontFamily="@font/poppins"
+                android:hint="Upload Logo"
+                android:maxLines="1"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:paddingStart="60dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="15dp"
+                android:singleLine="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Space
+                android:id="@+id/spacer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/upload_logo"
+                app:layout_constraintEnd_toEndOf="@+id/upload_logo"
+                app:layout_constraintStart_toStartOf="@+id/upload_logo"
+                app:layout_constraintTop_toTopOf="@+id/upload_logo" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/circle_drwable"
+                android:elevation="2dp"
+                android:layout_marginStart="-2dp"
+                android:padding="15dp"
+                android:src="@mipmap/galleryimage"
+                app:layout_constraintBottom_toBottomOf="@+id/spacer"
+                app:layout_constraintStart_toStartOf="@+id/spacer"
+                app:layout_constraintTop_toTopOf="@+id/spacer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:padding="0dp"
+                android:src="@mipmap/allery" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/cover_image"
+                style="@style/fields_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                android:drawableEnd="@drawable/camera"
+                android:fontFamily="@font/poppins"
+                android:hint="Add your cover photo"
+                android:inputType="number"
+                android:maxLines="1"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:paddingStart="60dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="15dp"
+                android:singleLine="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Space
+                android:id="@+id/spacer1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/cover_image"
+                app:layout_constraintEnd_toEndOf="@+id/cover_image"
+                app:layout_constraintStart_toStartOf="@+id/cover_image"
+                app:layout_constraintTop_toTopOf="@+id/cover_image" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/circle_drwable"
+                android:elevation="2dp"
+                android:layout_marginStart="-2dp"
+                android:padding="15dp"
+                android:src="@mipmap/galleryimage"
+                app:layout_constraintBottom_toBottomOf="@+id/spacer1"
+                app:layout_constraintStart_toStartOf="@+id/spacer1"
+                app:layout_constraintTop_toTopOf="@+id/spacer1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/img_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:padding="0dp"
+                android:src="@mipmap/allery" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/portfolio"
+                style="@style/fields_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                android:drawableEnd="@drawable/camera"
+                android:fontFamily="@font/poppins"
+                android:hint="Add Portfolio logo"
+                android:inputType="number"
+                android:maxLines="1"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:paddingStart="60dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="15dp"
+                android:singleLine="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Space
+                android:id="@+id/spacer2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/portfolio"
+                app:layout_constraintEnd_toEndOf="@+id/portfolio"
+                app:layout_constraintStart_toStartOf="@+id/portfolio"
+                app:layout_constraintTop_toTopOf="@+id/portfolio" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/circle_drwable"
+                android:elevation="2dp"
+                android:padding="15dp"
+                android:layout_marginStart="-2dp"
+                android:src="@mipmap/galleryimage"
+                app:layout_constraintBottom_toBottomOf="@+id/spacer2"
+                app:layout_constraintStart_toStartOf="@+id/spacer2"
+                app:layout_constraintTop_toTopOf="@+id/spacer2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:padding="0dp"
+                    android:src="@mipmap/allery" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:padding="0dp"
+                    android:src="@mipmap/allery" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:padding="0dp"
+                    android:src="@mipmap/allery" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:padding="0dp"
+                    android:src="@mipmap/allery" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_complete"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/green_btn"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Complete"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

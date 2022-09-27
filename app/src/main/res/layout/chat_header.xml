@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/yellow_stroke_btn"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/pet_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/doggy" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="Where was pet last seen?"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_place"
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="California"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="When was pet last seen?"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_when_seen"
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="10:00 Am"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="Is your pet friendly to approach?"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_friendly"
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="Yes"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="If you are comfortable,then share \n your contact details"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="999999999"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="Your comments"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_comments"
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="Lorem ipsum"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+</LinearLayout>

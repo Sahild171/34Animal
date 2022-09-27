@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Pet.AddPetActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/back2"
+            android:onClick="CloseAddPet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/app_name" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:elevation="2dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Add Pet"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:elevation="2dp"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ScrollView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_petname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Name Of Pet"
+                android:singleLine="true"
+                android:maxLines="1"
+                style="@style/fields_small"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:fontFamily="@font/poppins"
+                android:paddingStart="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Space
+                android:id="@+id/spacer"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_petname"
+                app:layout_constraintBottom_toBottomOf="@+id/et_petname"
+                app:layout_constraintTop_toTopOf="@+id/et_petname"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/et_petname" />
+
+            <ImageView
+                android:layout_marginLeft="-1dp"
+                android:src="@mipmap/cat"
+                app:layout_constraintStart_toStartOf="@+id/spacer"
+                app:layout_constraintTop_toTopOf="@+id/spacer"
+                app:layout_constraintBottom_toBottomOf="@+id/spacer"
+                android:background="@drawable/circle_drwable"
+                android:layout_width="55dp"
+                android:padding="15dp"
+                android:elevation="2dp"
+                android:layout_height="55dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con_pet"
+                android:layout_width="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="50dp">
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/et_typepet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40dp"
+                    android:background="@drawable/edittext_background"
+                    android:paddingTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="12sp"
+                    app:ms_dropdown_max_height="350dp"
+                    app:ms_dropdown_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:hint="@string/prompt_text"
+                    app:ms_hint="@string/prompt_text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/img_down"-->
+<!--                android:background="@drawable/dropdown"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/et_typepet"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/et_typepet"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/et_typepet"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+
+<!--            <Space-->
+<!--                android:id="@+id/spacer1"-->
+<!--                android:layout_width="0dp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/et_typepet"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/et_typepet"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/et_typepet"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/et_typepet" />-->
+
+            <ImageView
+                android:layout_marginLeft="-1dp"
+                android:src="@mipmap/cat"
+                app:layout_constraintStart_toStartOf="@+id/con_pet"
+                app:layout_constraintTop_toTopOf="@+id/con_pet"
+                app:layout_constraintBottom_toBottomOf="@+id/con_pet"
+                android:background="@drawable/circle_drwable"
+                android:layout_width="55dp"
+                android:padding="15dp"
+                android:elevation="2dp"
+                android:layout_height="55dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_colorpet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Color Of Pet"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                style="@style/fields_small"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:fontFamily="@font/poppins"
+                android:paddingStart="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Space
+                android:id="@+id/spacer2"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_colorpet"
+                app:layout_constraintBottom_toBottomOf="@+id/et_colorpet"
+                app:layout_constraintTop_toTopOf="@+id/et_colorpet"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/et_colorpet" />
+
+            <ImageView
+                android:layout_marginLeft="-1dp"
+                android:src="@mipmap/catdog"
+                app:layout_constraintStart_toStartOf="@+id/spacer2"
+                app:layout_constraintTop_toTopOf="@+id/spacer2"
+                app:layout_constraintBottom_toBottomOf="@+id/spacer2"
+                android:background="@drawable/circle_drwable"
+                android:layout_width="55dp"
+                android:padding="12dp"
+                android:elevation="2dp"
+                android:layout_height="55dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_breed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Breed Of Pet"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                style="@style/fields_small"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:fontFamily="@font/poppins"
+                android:paddingStart="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Space
+                android:id="@+id/spacer3"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_breed"
+                app:layout_constraintBottom_toBottomOf="@+id/et_breed"
+                app:layout_constraintTop_toTopOf="@+id/et_breed"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/et_breed" />
+
+            <ImageView
+                android:layout_marginLeft="-1dp"
+                android:src="@mipmap/pawgredient"
+                app:layout_constraintStart_toStartOf="@+id/spacer3"
+                app:layout_constraintTop_toTopOf="@+id/spacer3"
+                app:layout_constraintBottom_toBottomOf="@+id/spacer3"
+                android:background="@drawable/circle_drwable"
+                android:layout_width="55dp"
+                android:padding="15dp"
+                android:elevation="2dp"
+                android:layout_height="55dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Description Here..."
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="15dp"
+            style="@style/fields_small"
+
+            android:fontFamily="@font/poppins"
+            android:paddingStart="15dp"
+            android:gravity="top"
+            android:maxLines="4"
+            android:minLines="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_uploadphotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Upload Photos"
+                android:paddingEnd="15dp"
+                android:paddingTop="15dp"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingBottom="15dp"
+                style="@style/fields_small"
+                android:drawableEnd="@drawable/camera"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:fontFamily="@font/poppins"
+                android:paddingStart="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Space
+                android:id="@+id/spacer4"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_uploadphotos"
+                app:layout_constraintBottom_toBottomOf="@+id/et_uploadphotos"
+                app:layout_constraintTop_toTopOf="@+id/et_uploadphotos"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/et_uploadphotos" />
+
+            <ImageView
+                android:layout_marginLeft="-1dp"
+                android:src="@mipmap/galleryimage"
+                app:layout_constraintStart_toStartOf="@+id/spacer4"
+                app:layout_constraintTop_toTopOf="@+id/spacer4"
+                app:layout_constraintBottom_toBottomOf="@+id/spacer4"
+                android:background="@drawable/circle_drwable"
+                android:layout_width="55dp"
+                android:padding="15dp"
+                android:elevation="2dp"
+                android:layout_height="55dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_images"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content">
+
+
+
+
+            <com.google.android.material.card.MaterialCardView
+               android:id="@+id/card1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/card2"
+                android:layout_width="70dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                android:layout_margin="3dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/green"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:background="@mipmap/allery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/img_cross1"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:src="@drawable/white_dots"
+                app:layout_constraintTop_toTopOf="@+id/card1"
+                app:layout_constraintEnd_toEndOf="@+id/card1"
+                android:background="@drawable/green_small_circle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/card1"
+                app:layout_constraintEnd_toStartOf="@+id/card3"
+                android:layout_width="70dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                android:layout_margin="3dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/green"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:background="@mipmap/allery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/img_cross2"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:src="@drawable/white_dots"
+                app:layout_constraintTop_toTopOf="@+id/card2"
+                app:layout_constraintEnd_toEndOf="@+id/card2"
+                android:background="@drawable/green_small_circle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/card2"
+                app:layout_constraintEnd_toStartOf="@+id/card4"
+                android:layout_width="70dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                android:layout_margin="3dp"
+                app:strokeColor="@color/green"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:background="@mipmap/allery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/img_cross3"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:src="@drawable/white_dots"
+                app:layout_constraintTop_toTopOf="@+id/card3"
+                app:layout_constraintEnd_toEndOf="@+id/card3"
+                android:background="@drawable/green_small_circle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card4"
+                app:layout_constraintStart_toEndOf="@+id/card3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="70dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                android:layout_margin="3dp"
+                app:strokeColor="@color/green"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:padding="5dp"
+                    android:background="@mipmap/allery"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <ImageView
+                android:id="@+id/img_cross4"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:src="@drawable/white_dots"
+                app:layout_constraintTop_toTopOf="@+id/card4"
+                app:layout_constraintEnd_toEndOf="@+id/card4"
+                android:background="@drawable/green_small_circle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_save"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/green_btn"
+                android:layout_width="130dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:layout_marginBottom="20dp"
+                android:layout_height="35dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

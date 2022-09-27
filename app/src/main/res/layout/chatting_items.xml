@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="2dp"
+            android:text=""
+
+            android:paddingRight="20dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/shape_incoming_msg"
+            android:paddingBottom="10dp"
+            android:id="@+id/messageRecived"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:text="10:20 PM"
+            android:textSize="8sp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/msg_rec_time"
+            android:textColor="#FF5722"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="2dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="nov"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/shape_outgoing_msg"
+            android:id="@+id/messageSend"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:text="10:20 PM"
+            android:textSize="8sp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/msg_send_time"
+            android:textColor="#3BBCEF"
+            android:layout_gravity="right"
+            android:layout_marginRight="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/img_recieve"
+            android:layout_gravity="start"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/img_send"
+            android:layout_gravity="end"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:background="@drawable/yellow_stroke_btn"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/pet_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/doggy" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tv_questions"
+                android:textSize="10sp"
+                android:fontFamily="@font/poppins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="15dp"
+                android:text=""
+                android:textColor="@color/black" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

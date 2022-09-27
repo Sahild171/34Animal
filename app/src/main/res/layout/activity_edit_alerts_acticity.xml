@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.AlertDetail.EditAlertsActicity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/back"
+            android:onClick="Close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:elevation="2dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Edit Alert"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:elevation="2dp"
+            android:text=""
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/et_petname"
+                style="@style/fields_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Add title"
+                android:maxLines="1"
+                android:paddingStart="70dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:singleLine="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Space
+                android:id="@+id/spacer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/et_petname"
+                app:layout_constraintEnd_toEndOf="@+id/et_petname"
+                app:layout_constraintStart_toStartOf="@+id/et_petname"
+                app:layout_constraintTop_toTopOf="@+id/et_petname" />
+
+            <ImageView
+                android:layout_marginStart="-3dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_drwable"
+                android:elevation="2dp"
+                android:padding="15dp"
+                android:src="@mipmap/title"
+                app:layout_constraintBottom_toBottomOf="@+id/spacer"
+                app:layout_constraintStart_toStartOf="@+id/spacer"
+                app:layout_constraintTop_toTopOf="@+id/spacer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con_pet"
+                android:layout_width="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="50dp">
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_pets"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="@dimen/_40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/prompt_text"
+                    android:paddingTop="0dp"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:ms_dropdown_height="wrap_content"
+                    app:ms_dropdown_max_height="350dp"
+                    app:ms_hint="@string/prompt_text" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+            <ImageView
+                android:layout_marginLeft="-1dp"
+                android:src="@mipmap/cat"
+                app:layout_constraintStart_toStartOf="@+id/con_pet"
+                app:layout_constraintTop_toTopOf="@+id/con_pet"
+                app:layout_constraintBottom_toBottomOf="@+id/con_pet"
+                android:background="@drawable/circle_drwable"
+                android:layout_width="60dp"
+                android:padding="15dp"
+                android:elevation="2dp"
+                android:layout_height="60dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con_prio"
+                android:layout_width="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="50dp">
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40dp"
+                    android:layout_marginStart="@dimen/_40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_background"
+                    android:hint="Priority"
+                    android:paddingTop="0dp"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:ms_dropdown_height="wrap_content"
+                    app:ms_dropdown_max_height="350dp"
+                    app:ms_hint="Priority" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+            <ImageView
+                android:layout_marginLeft="-3dp"
+                android:src="@mipmap/cat"
+                app:layout_constraintStart_toStartOf="@+id/con_prio"
+                app:layout_constraintTop_toTopOf="@+id/con_prio"
+                app:layout_constraintBottom_toBottomOf="@+id/con_prio"
+                android:background="@drawable/circle_drwable"
+                android:layout_width="60dp"
+                android:padding="15dp"
+                android:elevation="2dp"
+                android:layout_height="60dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/et_description"
+            style="@style/fields_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/poppins"
+            android:gravity="top"
+            android:hint="Description here..."
+            android:maxLines="4"
+            android:minLines="4"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_post"
+            android:layout_width="120dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/green_btn"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Save"
+            android:onClick="Close"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

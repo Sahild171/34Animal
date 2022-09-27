@@ -1,0 +1,31 @@
+package com.application.animalAlertApp.data.Response.Auth
+
+data class UpdateToken(
+    val __v: Int,
+    val _id: String,
+    val createdAt: String,
+    val deviceToken: String,
+    val email: String,
+    val image: String,
+    val isActive: Boolean,
+    val isApproved: Boolean,
+    val isBlocked: Boolean,
+    val isComment: Boolean,
+    val isDeleted: Boolean,
+    val isLike: Boolean,
+    val name: String,
+    val isOtpVerify: Boolean,
+    val isPerferenceSet: Boolean,
+    val isPhoneVerified: Boolean,
+    val isPostAccepted: Boolean,
+    val isPostRejected: Boolean,
+    val isProfileSetup: Boolean,
+    val jwtToken: String,
+    val location: String,
+    val loginType: String,
+    val online: Boolean,
+    val perference: List<Any>,
+    val questionSubmitted: Boolean,
+    val updatedAt: String,
+    val userType: String
+)

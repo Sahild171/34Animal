@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Shops.CreateShopFragement1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_petname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Enter Business Name"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:paddingTop="15dp"
+            style="@style/fields_small"
+            android:paddingBottom="15dp"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="60dp"
+            android:paddingEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/spacer"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_petname"
+            app:layout_constraintBottom_toBottomOf="@+id/et_petname"
+            app:layout_constraintTop_toTopOf="@+id/et_petname"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/et_petname" />
+
+        <ImageView
+            android:src="@drawable/account"
+            app:layout_constraintStart_toStartOf="@+id/spacer"
+            app:layout_constraintTop_toTopOf="@+id/spacer"
+            app:layout_constraintBottom_toBottomOf="@+id/spacer"
+            android:background="@drawable/circle_drwable"
+            android:layout_width="55dp"
+            android:layout_marginStart="-2dp"
+            android:padding="15dp"
+            android:elevation="2dp"
+            android:layout_height="55dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <EditText
+        android:id="@+id/et_description"
+        android:background="@drawable/edittext_background"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:maxLines="4"
+        android:gravity="top"
+        style="@style/fields_small"
+        android:minLines="4"
+        android:hint="Business Description"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_busmobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Enter Business Mobile"
+            android:singleLine="true"
+            android:paddingEnd="5dp"
+            android:maxLines="1"
+            style="@style/fields_small"
+            android:inputType="number"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/spacer1"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_busmobile"
+            app:layout_constraintBottom_toBottomOf="@+id/et_busmobile"
+            app:layout_constraintTop_toTopOf="@+id/et_busmobile"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/et_busmobile" />
+
+        <ImageView
+            android:src="@drawable/call"
+            app:layout_constraintStart_toStartOf="@+id/spacer1"
+            app:layout_constraintTop_toTopOf="@+id/spacer1"
+            app:layout_constraintBottom_toBottomOf="@+id/spacer1"
+            android:background="@drawable/circle_drwable"
+            android:layout_width="55dp"
+            android:padding="15dp"
+            android:layout_marginStart="-2dp"
+            android:elevation="2dp"
+            android:layout_height="55dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_busloc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Business Location"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:paddingEnd="5dp"
+            style="@style/fields_small"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/spacer2"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_busloc"
+            app:layout_constraintBottom_toBottomOf="@+id/et_busloc"
+            app:layout_constraintTop_toTopOf="@+id/et_busloc"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/et_busloc" />
+
+        <ImageView
+            android:src="@drawable/location"
+            app:layout_constraintStart_toStartOf="@+id/spacer2"
+            app:layout_constraintTop_toTopOf="@+id/spacer2"
+            app:layout_constraintBottom_toBottomOf="@+id/spacer2"
+            android:background="@drawable/circle_drwable"
+            android:layout_width="55dp"
+            android:padding="15dp"
+            android:layout_marginStart="-2dp"
+            android:elevation="2dp"
+            android:layout_height="55dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/green"
+            android:text="@string/currentlocation"
+            android:layout_marginEnd="50dp"
+            android:layout_gravity="end"
+            android:drawablePadding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_continue"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:text="Continue"
+        android:fontFamily="@font/poppins_semibold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/green_btn"
+        android:layout_width="130dp"
+        android:layout_height="40dp"/>
+
+    </LinearLayout>
+</ScrollView>

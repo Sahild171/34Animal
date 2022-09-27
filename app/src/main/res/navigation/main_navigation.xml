@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/alertFragment"
+        android:name="com.application.animalAlertApp.View.Alerts.AlertFragment"
+        android:label="fragment_alert"
+        tools:layout="@layout/fragment_alert" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.application.animalAlertApp.View.Chats.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.application.animalAlertApp.View.Shops.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.application.animalAlertApp.View.Notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.application.animalAlertApp.View.Home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>

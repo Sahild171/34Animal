@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.application.animalAlertApp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.application.animalAlertApp.di.BaseApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Animal"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name="com.application.animalAlertApp.View.BusinessProfile.EditBussProfile.EditPortfolio"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Payments.ChoosePlanActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Shops.CheckShopStatus"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Payments.SavecardActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.BusinessProfile.EditBussProfile.AddMoreServiceActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.BusinessProfile.EditBussProfile.EditBusinessInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.BusinessProfile.EditBussProfile.EditServiceActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.Locations.MapsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Home.Comments.PostCommentsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Requsts.ReqeustActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Profile.PetDetailActivtiy"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Profile.SeeAllPetsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Profile.EditProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Chats.ZoomImageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Pet.AddPetActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.ForgotPassword.ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Chats.QuestionsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.FaqActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Payments.CardPaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Post.AddPostActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.MyProfilePostActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Friends.ConnectionsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Profile.MyProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.SubscriptionBuyActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Chats.ChatActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Shops.CreateShopActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Payments.CardDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.SubscriptionActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.TermsandConditions"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.ContactUsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Settings.SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.BusinessProfile.BusinessProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.AlertDetail.ShopDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Requsts.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.AddAlerts.AddAlertActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Otp.OtpVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Main.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Prefrence.SelectPrefrenceActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.Auth.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.RegisterUser.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.WelcomeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.application.animalAlertApp.View.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="" />
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.version"-->
+<!--            android:value="@integer/google_play_services_version" />-->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/testId"/>
+
+
+        <service
+            android:name="com.application.animalAlertApp.FCM.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.application.animalAlertApp.Locations.FetchAddressIntentService"
+            android:exported="false" />
+    </application>
+
+</manifest>

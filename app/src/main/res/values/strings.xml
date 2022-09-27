@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">AAC</string>
+    <string name="anima_alert_community">Anima Alert Community</string>
+    <string name="next">Next</string>
+    <string name="signup">Sign Up</string>
+    <string name="let_s_get_started">Lets get Started!</string>
+    <string name="termsandcond">By signing up you accept the <b> \"Terms &amp; Conditions\"</b> and <b>Policies</b></string>
+    <string name="already_account">Already have an account? </string>
+    <string name="log_in">Log In</string>
+    <string name="welcome">Welcome!</string>
+    <string name="prompt_text">Type of Pet</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</string>
+    <string name="otp">Otp has been sent to you on your mobile number</string>
+    <string name="change_contact_number"><u>Change contact number</u></string>
+    <string name="loremsmall">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod et dolore magna aliqua.</string>
+
+
+    <string name="walk1">Welcome to the app that finally offers peace of mind to the pet owner community. Our goal is to ensure animal safety and wellbeing by connecting a network of pet lovers together from all over the world!</string>
+    <string name="walk2">Without having to solely contact police, shelters, animal hospitals or vets, this community-based app is an all-inclusive standard for pet care. This app is the new standard in getting to know one’s neighbors and their pets, all the while offering a safety net for each network of animal lovers alike!</string>
+    <string name="walk3">Need to put up an animal for adoption? Can’t find your cat Mittens? Found a little stray puppy? The Alert feature is here to help!
+Do you offer any services related to animals and pets? Are you looking for a dog walker or maybe a cat sitter? Look no further than Animal Alert Community!</string>
+
+    <string name="google_web_client_id"></string>
+
+    <string name="see_more"><u>See More</u></string>
+    <string name="currentlocation"><u>Use My Current Location</u></string>
+    <string name="default_notification_channel_id">123456789</string>
+    <string name="view_reply"><u>View Replies</u></string>
+    <string name="hide_reply"><u>Hide Replies</u></string>
+    <string name="service_not_available">Serivce not Available</string>
+    <string name="no_address_found">No address found</string>
+
+
+    <string name="stripe_publishable_key"></string>
+
+    <string name="add_card_stripe">Add Card</string>
+    <string name="one_time_payment">One Time Payment</string>
+
+
+    <string name="What_is_AAC">The Animal Alert Community is a non-profit organization founded in 2021 by January S. Steward with the number one goal of ensuring animal safety and wellbeing. The Animal Alert Community mobile app offers endless resources for animal lovers and pet owners alike by bringing the community together on a digital platform.</string>
+    <string name="is_my_personal_info">Here at Animal Alert Community, privacy is highly valued. No personal data is sold or shared to third parties. Location preferences are solely up to the user to display as precise or approximate at their own discretion.</string>
+    <string name="how_does_work">The Animal Alert Community app functions like a social media site exclusively for animals. The purpose of this app is to connect pet owners and animal lovers within the community to be able to assist with animal related needs when veterinary clinics are closed or police aren’t available.</string>
+    <string name="alert_system">The alert system is the bread and butter of the Animal Alert Community mobile app. This emergency system functions like “Amber Alert” in the way that a message is sent to everyone’s phone in the general vicinity. From seeking new homes for kittens or trying to locate a lost dog, the alert system offers immediate assistance by bringing your community together with an instant notification. Alerts range from green, yellow and red depending on the severity for quick identification by its color.</string>
+    <string name="subscription_for">The subscription feature is for the entrepreneurs of the community! If you have a small business or would like to start one, look no further. The app does not require a subscription to use, however in order to sell goods through the app, a subscription is mandatory. Select your own tier for preference.</string>
+    <string name="purchase_animal">By browsing the home screen of the app, one can expect to find all sorts of animal related posts with owners offering to sell pets or even give them away for free! Kitten litters are often given away, so expect some tantalizing offers with cute pictures! One can take advantage of the alert feature by using a green alert for any specific animal requests. In search of a new puppy? Send a green alert to your community so they know! The shop may also offer animal purchasing as well.</string>
+
+    <string name="testId"></string>
+
+</resources>

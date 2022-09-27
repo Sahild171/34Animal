@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Shops.CreateShopFragment2">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/inner_name_constraint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/edittext_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="3dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:ms_dropdown_height="wrap_content"
+                    app:ms_dropdown_max_height="350dp"
+                    app:ms_hint="Select Services" />
+
+                <Space
+                    android:id="@+id/spacer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/spinner_service"
+                    app:layout_constraintEnd_toEndOf="@+id/spinner_service"
+                    app:layout_constraintStart_toStartOf="@+id/spinner_service"
+                    app:layout_constraintTop_toTopOf="@+id/spinner_service" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="-2dp"
+                android:background="@drawable/circle_drwable"
+                android:contentDescription="@string/app_name"
+                android:elevation="2dp"
+                android:padding="15dp"
+                android:src="@mipmap/useraccount"
+                app:layout_constraintBottom_toBottomOf="@+id/inner_name_constraint"
+                app:layout_constraintStart_toStartOf="@+id/inner_name_constraint"
+                app:layout_constraintTop_toTopOf="@+id/inner_name_constraint" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/inner_constraint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <EditText
+                    android:id="@+id/et_price"
+                    style="@style/fields_small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawableEnd="@mipmap/ic_dollar"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter Price"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:paddingStart="60dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="8dp"
+                    android:singleLine="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/spinner_rates"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_rates"
+                    android:layout_width="120dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_background"
+                    android:hint="Select"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/et_price"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:ms_dropdown_height="wrap_content"
+                    app:ms_dropdown_max_height="350dp"
+                    app:ms_hint="Select" />
+
+                <Space
+                    android:id="@+id/spacer1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_price"
+                    app:layout_constraintEnd_toEndOf="@+id/et_price"
+                    app:layout_constraintStart_toStartOf="@+id/et_price"
+                    app:layout_constraintTop_toTopOf="@+id/et_price" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="-2dp"
+                android:background="@drawable/circle_drwable"
+                android:contentDescription="@string/app_name"
+                android:elevation="2dp"
+                android:padding="15dp"
+                android:src="@mipmap/useraccount"
+                app:layout_constraintBottom_toBottomOf="@+id/inner_constraint"
+                app:layout_constraintStart_toStartOf="@+id/inner_constraint"
+                app:layout_constraintTop_toTopOf="@+id/inner_constraint" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <EditText
+            android:id="@+id/et_busdescription"
+            style="@style/fields_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/edittext_background"
+            android:gravity="top"
+            android:hint="Services Description..."
+            android:maxLines="4"
+            android:minLines="4"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp" />
+
+        <ImageView
+            android:id="@+id/img_addmore"
+            android:background="@drawable/green_small_circle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="48dp"
+            android:layout_gravity="end"
+            android:src="@drawable/white_add"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="42dp"
+            android:fontFamily="@font/poppins"
+            android:text="Add more"
+            android:textColor="@color/green"
+            android:textSize="10sp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_continue"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/green_btn"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_service"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

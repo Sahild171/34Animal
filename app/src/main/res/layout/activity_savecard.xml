@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Payments.SavecardActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/back"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:elevation="2dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Save Card"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:elevation="2dp"
+            android:text=""
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.braintreepayments.cardform.view.AccessibleSupportedCardTypesView
+                android:id="@+id/supported_card_types"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint" />
+
+
+            <com.braintreepayments.cardform.view.CardForm
+                android:id="@+id/cardform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/bt_pay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/supported_card_types" />
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/textView40"-->
+            <!--        style="@style/small"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginStart="16dp"-->
+            <!--        android:layout_marginTop="24dp"-->
+            <!--        android:text="Credit Card Number"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/constraint" />-->
+
+            <!--    <com.application.animalApp.View.Payments.FormattedNumberEditText-->
+            <!--        android:id="@+id/et_cardnumber"-->
+            <!--        android:layout_width="0dp"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginStart="16dp"-->
+            <!--        android:layout_marginEnd="16dp"-->
+            <!--        android:backgroundTint="@color/green"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/textView40" />-->
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/textView48"-->
+            <!--        style="@style/small"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginStart="16dp"-->
+            <!--        android:layout_marginTop="16dp"-->
+            <!--        android:text=" Valid Thru"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/et_cardnumber" />-->
+
+            <!--    <EditText-->
+            <!--        android:id="@+id/et_month"-->
+            <!--        android:layout_width="0dp"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginStart="16dp"-->
+            <!--        android:backgroundTint="@color/green"-->
+            <!--        android:fontFamily="@font/poppins"-->
+            <!--        android:hint="MM"-->
+            <!--        android:inputType="number"-->
+            <!--        android:maxLength="2"-->
+            <!--        android:maxLines="1"-->
+            <!--        android:singleLine="true"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/textView48" />-->
+
+            <!--    <EditText-->
+            <!--        android:id="@+id/et_year"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginStart="16dp"-->
+            <!--        android:backgroundTint="@color/green"-->
+            <!--        android:fontFamily="@font/poppins"-->
+            <!--        android:hint="YY"-->
+            <!--        android:inputType="number"-->
+            <!--        android:maxLength="2"-->
+            <!--        android:maxLines="1"-->
+            <!--        android:singleLine="true"-->
+            <!--        app:layout_constraintStart_toEndOf="@+id/et_month"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/textView48" />-->
+
+            <!--    <EditText-->
+            <!--        android:id="@+id/et_cvv"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginStart="50dp"-->
+            <!--        android:backgroundTint="@color/green"-->
+            <!--        android:fontFamily="@font/poppins"-->
+            <!--        android:hint="CVV"-->
+            <!--        android:inputType="number"-->
+            <!--        android:maxLength="3"-->
+            <!--        app:layout_constraintStart_toEndOf="@+id/et_year"-->
+            <!--        app:layout_constraintTop_toTopOf="@+id/et_year" />-->
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/textView49"-->
+            <!--        style="@style/small"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginStart="55dp"-->
+            <!--        android:text="CVV"-->
+            <!--        app:layout_constraintBottom_toTopOf="@+id/et_cvv"-->
+            <!--        app:layout_constraintStart_toEndOf="@+id/et_year" />-->
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/textView50"-->
+            <!--        style="@style/small"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginStart="16dp"-->
+            <!--        android:layout_marginTop="16dp"-->
+            <!--        android:text="Card Holder's Name"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/et_year" />-->
+
+            <!--    <EditText-->
+            <!--        android:id="@+id/et_cardholdername"-->
+            <!--        android:layout_width="0dp"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginStart="16dp"-->
+            <!--        android:layout_marginEnd="16dp"-->
+            <!--        android:backgroundTint="@color/green"-->
+            <!--        android:fontFamily="@font/poppins"-->
+            <!--        android:inputType="textPersonName"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/textView50" />-->
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_pay"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/green_btn"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

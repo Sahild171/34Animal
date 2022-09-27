@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/myprofile"
+        android:title="My Profile" />
+
+    <item
+        android:id="@+id/busprofile"
+        android:title="Business Profile" />
+    <item
+        android:id="@+id/subscription"
+        android:title="Subscription Payments" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/faq"
+        android:title="FAQ" />
+
+    <item
+        android:id="@+id/terms"
+        android:title="Terms &amp; Conditions" />
+
+    <item
+        android:id="@+id/contact"
+        android:title="Contact Us" />
+
+
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout" />
+
+</menu>

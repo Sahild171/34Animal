@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Chats.ZoomImageActivity">
+
+
+
+
+
+<com.application.animalAlertApp.Utils.TouchImageView
+    android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/image_placeholder"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+
+<!--    <com.jsibbold.zoomage.ZoomageView-->
+<!--        android:id="@+id/myZoomageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/image_placeholder"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:zoomage_animateOnReset="true"-->
+<!--        app:zoomage_autoCenter="false"-->
+<!--        app:zoomage_autoResetMode="ALWAYS"-->
+<!--        app:zoomage_maxScale="8"-->
+<!--        app:zoomage_minScale="0.6"-->
+<!--        app:zoomage_restrictBounds="false"-->
+<!--        app:zoomage_translatable="true"-->
+<!--        app:zoomage_zoomable="true" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

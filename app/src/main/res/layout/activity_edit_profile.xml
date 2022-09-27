@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Profile.EditProfileActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/back"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:elevation="2dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:elevation="2dp"
+            android:text=""
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/placeholder"
+                    app:civ_border_color="@color/green"
+                    app:civ_border_width="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/img_change"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/green_background"
+                    android:padding="5dp"
+                    android:src="@drawable/white_camera"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_profile"
+                    app:layout_constraintEnd_toEndOf="@+id/img_profile" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/fields_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/edittext_background"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter  Name"
+                    android:maxLines="1"
+                    android:paddingStart="60dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="15dp"
+                    android:singleLine="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Space
+                    android:id="@+id/spacer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_name"
+                    app:layout_constraintEnd_toEndOf="@+id/et_name"
+                    app:layout_constraintStart_toStartOf="@+id/et_name"
+                    app:layout_constraintTop_toTopOf="@+id/et_name" />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="-1dp"
+                    android:background="@drawable/circle_drwable"
+                    android:elevation="0dp"
+                    android:padding="15dp"
+                    android:src="@drawable/account"
+                    app:layout_constraintBottom_toBottomOf="@+id/spacer"
+                    app:layout_constraintStart_toStartOf="@+id/spacer"
+                    app:layout_constraintTop_toTopOf="@+id/spacer" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/et_petemail"
+                    style="@style/fields_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/edittext_background"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter email address"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingStart="60dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:singleLine="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Space
+                    android:id="@+id/spaceremail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_petemail"
+                    app:layout_constraintEnd_toEndOf="@+id/et_petemail"
+                    app:layout_constraintStart_toStartOf="@+id/et_petemail"
+                    app:layout_constraintTop_toTopOf="@+id/et_petemail" />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="-1dp"
+                    android:background="@drawable/circle_drwable"
+                    android:elevation="2dp"
+                    android:padding="15dp"
+                    android:src="@drawable/message"
+                    app:layout_constraintBottom_toBottomOf="@+id/spaceremail"
+                    app:layout_constraintStart_toStartOf="@+id/spaceremail"
+                    app:layout_constraintTop_toTopOf="@+id/spaceremail" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    style="@style/fields_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/edittext_background"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Mobile number"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:paddingStart="60dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:singleLine="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Space
+                    android:id="@+id/spacermobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_mobile"
+                    app:layout_constraintEnd_toEndOf="@+id/et_mobile"
+                    app:layout_constraintStart_toStartOf="@+id/et_mobile"
+                    app:layout_constraintTop_toTopOf="@+id/et_mobile" />
+
+
+                <ImageView
+                    android:id="@+id/img_phone"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="-1dp"
+                    android:background="@drawable/circle_drwable"
+                    android:elevation="2dp"
+                    android:padding="15dp"
+                    android:src="@drawable/call"
+                    app:layout_constraintBottom_toBottomOf="@+id/spacermobile"
+                    app:layout_constraintStart_toStartOf="@+id/spacermobile"
+                    app:layout_constraintTop_toTopOf="@+id/spacermobile" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/et_loc"
+                    style="@style/fields_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/edittext_background"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Location"
+                    android:maxLines="1"
+                    android:paddingStart="60dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:singleLine="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Space
+                    android:id="@+id/spacerloc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_loc"
+                    app:layout_constraintEnd_toEndOf="@+id/et_loc"
+                    app:layout_constraintStart_toStartOf="@+id/et_loc"
+                    app:layout_constraintTop_toTopOf="@+id/et_loc" />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="-1dp"
+                    android:background="@drawable/circle_drwable"
+                    android:elevation="2dp"
+                    android:padding="15dp"
+                    android:src="@drawable/location"
+                    app:layout_constraintBottom_toBottomOf="@+id/spacerloc"
+                    app:layout_constraintStart_toStartOf="@+id/spacerloc"
+                    app:layout_constraintTop_toTopOf="@+id/spacerloc" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:fontFamily="@font/poppins"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/green"
+                android:text="@string/currentlocation"
+                android:layout_marginEnd="50dp"
+                android:layout_gravity="end"
+                android:drawablePadding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_save"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/green_btn"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

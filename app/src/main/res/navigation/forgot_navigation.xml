@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forgot_navigation"
+    app:startDestination="@id/forgotOtpFragment">
+
+    <fragment
+        android:id="@+id/forgotOtpFragment"
+        android:name="com.application.animalAlertApp.View.ForgotPassword.ForgotOtpFragment"
+        android:label="fragment_forgot_otp"
+        tools:layout="@layout/fragment_forgot_otp" >
+        <action
+            android:id="@+id/action_forgotOtpFragment_to_verifyForgotOtp"
+            app:destination="@id/verifyForgotOtp" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyForgotOtp"
+        android:name="com.application.animalAlertApp.View.ForgotPassword.VerifyForgotOtp"
+        android:label="fragment_verify_forgot_otp"
+        tools:layout="@layout/fragment_verify_forgot_otp" >
+        <action
+            android:id="@+id/action_verifyForgotOtp_to_resetForgotPassword"
+            app:destination="@id/resetForgotPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetForgotPassword"
+        android:name="com.application.animalAlertApp.View.ForgotPassword.ResetForgotPassword"
+        android:label="fragment_reset_forgot_password"
+        tools:layout="@layout/fragment_reset_forgot_password" />
+</navigation>
